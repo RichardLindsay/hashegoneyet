@@ -19,14 +19,37 @@
       flex-direction: column;
     }
 
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     img {
       width: 1000px;
       max-width: 80%;
     }
+
+    @media only screen and (min-width: 850px) {
+      body {
+        flex-direction: row;
+      }
+      
+      img {
+        height: 500px;
+        object-fit: cover;
+      }
+    }
   </style>
 </head>
 <body>
-  <img src="/no.jpeg" alt="">
-  <h1>No!</h1>
+  <div class="boris">
+    <img src="/boris-no.jpeg" alt="">
+    <h1>No!</h1>
+  </div>
+  <div class="james">
+    <img src="/james-no.jpeg" alt="">
+    <h1>No!</h1>
+  </div>
 </body>
 </html>
